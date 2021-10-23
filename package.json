@@ -1,0 +1,39 @@
+{
+  "name": "node-template",
+  "version": "0.1.0",
+  "description": "Node.js template",
+  "scripts": {
+    "start": "node dist/index.js",
+    "start:dev": "nodemon src/index.ts",
+    "build": "tsc --project ./",
+    "test": "jest",
+    "lint": "eslint --max-warnings 0 --fix",
+    "prepare": "husky install"
+  },
+  "keywords": [],
+  "author": "Igor Leahu <igor.leahu24@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^27.0.2",
+    "@typescript-eslint/eslint-plugin": "^5.1.0",
+    "@typescript-eslint/parser": "^5.1.0",
+    "babel-jest": "^27.3.1",
+    "eslint": "^8.1.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "husky": "^7.0.2",
+    "jest": "^27.3.1",
+    "lint-staged": "^11.2.3",
+    "nodemon": "^2.0.13",
+    "prettier": "^2.4.1",
+    "ts-jest": "^27.0.7",
+    "typescript": "^4.4.4"
+  },
+  "lint-staged": {
+    "src/**/*.*js": [
+      "eslint --max-warnings 0 --fix",
+      "prettier --write"
+    ]
+  }
+}
