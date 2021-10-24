@@ -8,7 +8,8 @@
     "esModuleInterop": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
-    "moduleResolution": "Node"
+    "moduleResolution": "Node",
+    "inlineSourceMap": true
   },
   "include": [
     "src/**/*"

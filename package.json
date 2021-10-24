@@ -13,25 +13,27 @@
   "keywords": [],
   "author": "Igor Leahu <igor.leahu24@gmail.com>",
   "license": "MIT",
+  "dependencies": {
+    "source-map-support": "^0.5.20"
+  },
   "devDependencies": {
     "@types/jest": "^27.0.2",
     "@typescript-eslint/eslint-plugin": "^5.1.0",
     "@typescript-eslint/parser": "^5.1.0",
-    "babel-jest": "^27.3.1",
     "eslint": "^8.1.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
-    "husky": "^7.0.2",
+    "husky": "^7.0.4",
     "jest": "^27.3.1",
-    "lint-staged": "^11.2.3",
-    "nodemon": "^2.0.13",
+    "lint-staged": "^11.2.4",
+    "nodemon": "^2.0.14",
     "prettier": "^2.4.1",
     "ts-jest": "^27.0.7",
     "typescript": "^4.4.4"
   },
   "lint-staged": {
-    "src/**/*.*js": [
+    "src/**/*.*ts": [
       "eslint --max-warnings 0 --fix",
       "prettier --write"
     ]
